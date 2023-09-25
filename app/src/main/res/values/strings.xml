@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shift23</string>
+    <string name="greeting">Приветствие</string>
+    <string name="registration">Регистрация</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="birthdate">Дата рождения:</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="registration_button_text">Регистрация</string>
+    <string name="default_hello">Привет!</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registrationFragment">
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="nsu.leorita.shift23.ui.registration.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_registration">
+
+        <action
+            android:id="@+id/action_registrationFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="nsu.leorita.shift23.ui.main_screen.MainScreenFragment"
+        android:label="MainScreenFragment"
+        tools:layout="@layout/fragment_main_screen">
+        <action
+            android:id="@+id/action_mainScreenFragment_to_greetingDialogFragment"
+            app:destination="@id/greetingDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/greetingDialogFragment"
+        android:name="nsu.leorita.shift23.ui.greeting.GreetingDialogFragment"
+        android:label="GreetingDialogFragment"
+        tools:layout="@layout/fragment_greeting_dialog"/>
+
+</navigation>
