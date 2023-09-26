@@ -31,6 +31,14 @@ class PrefsRepository(context: Context) {
 
     fun getPassword() = PREF_PASSWORD.getString()
 
+    fun logout()  {
+        PREF_SURNAME.put("")
+        PREF_NAME.put("")
+        PREF_BIRTHDATE.put("")
+        PREF_PASSWORD.put("")
+    }
+
+
     private fun String.put(string: String) {
         editor.putString(this, string)
         editor.apply()

@@ -47,7 +47,7 @@ class RegistrationFragment : Fragment() {
             )
             dataValidation.onSuccess {
                 viewModel.saveData(binding.surname.text.toString(), binding.name.text.toString(), binding.birthdatePicker.toLocalDate().toString(), binding.pas.text.toString())
-                findNavController().navigate(R.id.action_registrationFragment_to_mainScreenFragment)
+                findNavController().navigate(R.id.action_registrationFragment2_to_nav_graph)
             }
             dataValidation.onFailure {
                 exception ->

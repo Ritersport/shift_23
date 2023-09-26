@@ -9,4 +9,5 @@
     <string name="repeat_password">Повторите пароль</string>
     <string name="registration_button_text">Регистрация</string>
     <string name="default_hello">Привет!</string>
+    <string name="logout">ВЫХОД</string>
 </resources>
